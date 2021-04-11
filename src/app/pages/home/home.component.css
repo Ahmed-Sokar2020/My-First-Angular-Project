@@ -1,0 +1,283 @@
+/* Start The Main */
+main {
+  height: 500px;
+  background-color: #FDF3F4;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  z-index: 1;
+}
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.content .heading  {
+  padding-top: 60px;
+}
+
+.content h4 {
+  color: var(--red);
+}
+
+.content h1 {
+  padding: 10px 0px 20px;
+}
+
+.content p {
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--openblack);
+}
+
+.content div img {
+  border-top-left-radius: 25% ;
+  border-bottom-right-radius: 25% ;
+}
+
+.last {
+  display: flex;
+  width: 80%;
+  height: 70px;
+  justify-content:space-around;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: -50px;
+  background-color: #FDFDFD;
+}
+
+.last .last-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.last .last-info i {
+  color: var(--red);
+  margin-right: 10px;
+}
+
+.last i.fa-search {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: var(--red);
+  color: #FFF;
+  border-radius: 8px;
+}
+/* End The Main */
+
+/* Start About Us */
+.about-us {
+  padding-top: 50px;
+}
+
+.about-us .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us .images {
+  width: 75%;
+  display: flex;
+  flex-flow: row wrap ;
+}
+
+.about-us .images div img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.container .about-info {
+  margin-right: 85px;
+}
+
+.container .about-info h2 {
+  font-weight: normal;
+}
+
+.container .about-info p {
+  font-size: 13px;
+  line-height: 20px;
+  color:rgb(99, 91, 91);
+}
+
+.container .about-info p:first-of-type {
+  margin: 20px 0px 10px;
+}
+
+.container .about-info p:first-of-type span {
+  color: var(--red);
+}
+
+.container .about-info p:nth-of-type(2) span  {
+  color: var(--red);
+}
+/* End About Us */
+
+/* Start Services */
+.services {
+  padding-top: 80px;
+}
+
+.services .service p {
+  color:rgb(99, 91, 91);
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.services .service p span{
+  color: var(--red);
+  font-size: 14px;
+
+}
+
+.services .searvices-info {
+  display: flex;
+  flex-flow: row wrap ;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services .searvices-info .info{
+  width: 31%;
+  margin-right: 2%;
+  margin-bottom: 30px;;
+}
+
+.services .searvices-info .info i{
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: var(--red);
+  color: #FFF;
+  border-radius: 8px;
+}
+
+.services .searvices-info .info h4 {
+  color:rgb(99, 91, 91);
+  margin: 15px 0px 15px;
+}
+
+.services .searvices-info .info p {
+  color: var(--openblack);
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.services .all {
+  padding-top: 20px;
+}
+
+.services .all span {
+  color: var(--red);
+  font-size: 16px;
+}
+
+.services .all span i{
+  margin-left: 10px;
+}
+/* End Services */
+
+/* Start Specialists */
+.specialists {
+  padding-top: 70px;
+  background-color:#FFF5F6;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.specialists h2{
+  padding-bottom: 60px;
+}
+
+.specialists .specialists-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specialists .specialists-info .specialist-info {
+  width: 23%;
+  height: 250px;
+  background-color: #FDFDFD;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.specialists .specialists-info .specialist-info img{
+  width: 80px;
+  height: 80px;
+  border: 3px solid var(--openred);
+  border-radius: 50%;
+}
+
+.specialists .specialists-info .specialist-info h4 {
+  color:rgb(99, 91, 91);
+}
+
+.specialists .specialists-info .specialist-info p:first-of-type{
+  color: var(--openblack);
+  font-size: 13px;
+  line-height: 27px;
+}
+
+.specialists .specialists-info .specialist-info p:nth-of-type(2){
+  color: var(--red);
+  font-size: 13px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
+.specialists .specialists-info .specialist-info .profile {
+  width: 100px;
+  padding: 5px 10px;
+  background-color: var(--openred);
+  border-radius: 10px;
+  margin: auto;
+}
+
+.specialists .specialists-info .specialist-info span,
+.specialists .specialists-info .specialist-info .profile i,
+.specialists .specialists-info .specialist-info .profile span{
+  color: var(--red);
+  font-size: 13px;
+}
+
+.specialists .specialists-info .specialist-info .profile span{
+  padding-left: 10px;
+}
+
+.specialists .all span,
+.specialists .all i {
+  padding-top: 50px;
+  color: var(--red);
+  font-size: 14px;
+}
+
+.specialists .all span {
+  padding-right: 10px
+}
+/* End Specialists */
+
+/* Start Awards */
+.awards {
+  padding-top: 70px;
+}
+
+
+
+
+
+
+
+
+/* End Awards  */

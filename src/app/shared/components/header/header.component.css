@@ -10,7 +10,6 @@ header .spans span:first-child {
   margin-right: 35px;;
 }
 
-
 header .spans i,
 header .icons i {
   color: var(--red);
