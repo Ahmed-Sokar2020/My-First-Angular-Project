@@ -19,6 +19,10 @@ header .icons i {
   line-height: 50px;
 }
 
+header .icons a:hover i{
+  opacity: .6;
+}
+
 header .icons i:first-child,
 header .icons i:nth-child(2) {
   margin-right: 10px;;

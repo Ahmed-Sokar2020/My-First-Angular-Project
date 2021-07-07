@@ -1,41 +1,81 @@
- <!-- Start The Main -->
- <div class="the-main">
+<!-- Start The Main -->
+<div class="the-main">
+  <div class="container">
+    <header>
+      <div class="spans">
+        <!-- <button type="button" (click)="changeCurrentLanguage('en')">EN</button>
+        <button type="button" (click)="changeCurrentLanguage('ar')">AR</button> -->
+        <span>
+          <i class="fas fa-phone-alt"></i>
+          <span class="first">(702)555-0122</span>
+        </span>
+        <span
+          ><i class="fas fa-envelope"></i>
+          <span class="first">contactcentre@healthall.com</span>
+        </span>
+      </div>
 
-    <div class="container">
-      <header>
-        <div  class="spans">
-            <span>
-              <i class="fas fa-phone-alt"></i>
-              <span class="first">(702)555-0122</span>
-            </span>
-            <span><i class="fas fa-envelope"></i>
-              <span class="first">contactcentre@healthall.com</span>
-              </span>
-        </div>
-
-        <div class="icons">
+      <div class="icons">
+        <a href="https://www.facebook.com" alt="link">
           <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-linkedin-in"></i>
-          <i class="fab fa-twitter"></i>
-        </div>
-      </header>
-      <hr />
-      <nav>
-        <h2><i class="fas fa-tty"></i>Healthall</h2>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Membership</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-        <div>
-          <span><a href="#">Eng</a> <i class="fas fa-chevron-down"></i></span>
-          <span class="active"><a href="#">Profile</a> <i class="fas fa-user"></i></span>
-        </div>
-      </nav>
-
-    </div>
-
+        </a>
+        <a href="https://www.linkedin.com" alt="link"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://www.twitter.com" alt="link"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+    </header>
+    <hr />
+    <nav>
+      <h2><i class="fas fa-tty"></i>Healthall</h2>
+      <ul>
+        <li>
+          <a href="#">{{ "ABOUT_US" | translate }}</a>
+        </li>
+        <li>
+          <a href="#">{{ "SERVICES" | translate }}</a>
+        </li>
+        <li>
+          <a href="#">{{ "MEMPERSHIP" | translate }}</a>
+        </li>
+        <li>
+          <a
+            [routerLink]="'/contact'"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            {{ "CONTACT_US" | translate }}
+          </a>
+        </li>
+      </ul>
+      <div>
+        <span
+          ><button type="button" (click)="changeCurrentLanguage('ar')">
+            AR
+          </button>
+          <i class="fas fa-chevron-down"></i>
+        </span>
+        <span
+          ><button type="button" (click)="changeCurrentLanguage('en')">
+            Eng
+          </button>
+          <i class="fas fa-chevron-down"></i>
+        </span>
+        <span class="active"
+          ><a
+            [routerLink]="'/profile'"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            {{ "PROFILE" | translate }}
+          </a>
+          <i class="fas fa-user"></i
+        ></span>
+      </div>
+    </nav>
+  </div>
 </div>
 
 <!-- End The Main -->

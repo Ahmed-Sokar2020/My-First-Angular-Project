@@ -1,0 +1,65 @@
+<div class="contact-us">
+  <div class="container">
+    <div class="contact-info">
+      <div class="form-image">
+        <h2 class="upper">{{ "CONTACT_US1" | translate }}</h2>
+        <img src="./assets/images/contact.png" alt="image" />
+      </div>
+
+      <div class="myform">
+        <form [formGroup]="contactUsForm">
+          <input
+            type="text"
+            placeholder="User name"
+            formControlName="userName"
+          />
+          <ng-container
+            *ngIf="userName?.invalid && userName?.touched && userName?.dirty"
+          >
+            <span *ngIf="userName?.errors?.required">
+              This Field Is Required</span
+            >
+            <span *ngIf="userName?.errors?.invalidName"
+              >Name Can Not Include A number</span
+            >
+          </ng-container>
+          <br />
+
+          <input type="text" placeholder="Email" formControlName="email" />
+          <ng-container
+            *ngIf="email?.invalid && email?.touched && email?.dirty"
+          >
+            <span *ngIf="email?.errors?.required"> This Field Is Required</span>
+          </ng-container>
+          <br />
+
+          <textarea
+            placeholder="Message..."
+            cols="30"
+            rows="8"
+            formControlName="message"
+          >
+          </textarea
+          ><br />
+          <!-- <button >send</button> -->
+          <button (click)="doMyPost()">
+            {{ "SUBMIT" | translate }}
+            <i class="fas fa-arrow-right"></i></button
+          ><br />
+        </form>
+
+        <div class="icons text-center">
+          <a href="https://www.facebook.com" alt="link">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.twitter.com" alt="link"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com" alt="link"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

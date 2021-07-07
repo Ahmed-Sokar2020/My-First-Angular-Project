@@ -1,0 +1,103 @@
+:focus {
+  outline: none;
+}
+
+.contact-us {
+  padding: 100px 0px 100px;
+  background-color: #8275F0;
+}
+
+.contact-us .contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 60px;
+  border-radius: 35px;
+}
+
+.contact-info .form-image h2 {
+color: #7D58FC;
+}
+
+.contact-info .myform form input:nth-of-type(2) {
+  margin: 10px 0px 10px;
+}
+
+.contact-info .myform form input,
+.contact-info .myform form textarea {
+  background-color: #F5F2FF;
+  width: 100%;
+  padding: 15px 0px 15px 15px;
+  border: none;
+  border-radius: 20px;
+  }
+
+.contact-info .myform form input::placeholder,
+.contact-info .myform form textarea::placeholder {
+  color: #9CA6B7;
+  font-size: 12px;
+}
+
+.contact-info .myform form button {
+  background-color:#7249FC;
+  color: #FFF;
+  width: 100%;
+  padding: 15px 0px 15px 15px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.contact-info .myform .icons {
+  margin-top: 40px;
+  margin-bottom: -80px;
+}
+
+.contact-info .myform .icons a {
+  background-color: #FFFFFF;
+  width: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.contact-info .myform .icons a:hover i{
+  color: #FFFFFF;
+}
+
+.contact-info .myform .icons a:first-of-type:hover{
+  background-color: #385998;
+}
+
+.contact-info .myform .icons a:nth-of-type(2):hover{
+  background-color: #62C8F8;
+}
+
+.contact-info .myform .icons a:last-of-type:hover{
+  background-color: #0075B6;
+}
+
+.contact-info .myform .icons a:nth-of-type(2) {
+  margin: 0px 10px;
+}
+
+.myform .icons a i{
+  font-size: 18ypx;
+  font-weight: bold;
+}
+
+.myform .icons a .fa-facebook-f{
+  color: #385998;
+}
+
+.myform .icons a .fa-twitter{
+  color: #62C8F8;
+}
+
+.myform .icons a .fa-linkedin-in{
+  color: #0075B6;
+}
+
+

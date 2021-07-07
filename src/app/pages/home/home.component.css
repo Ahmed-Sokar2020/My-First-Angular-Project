@@ -102,7 +102,7 @@ main {
 .container .about-info p {
   font-size: 13px;
   line-height: 20px;
-  color:rgb(99, 91, 91);
+  color: rgb(49, 45, 45);
 }
 
 .container .about-info p:first-of-type {
@@ -124,7 +124,7 @@ main {
 }
 
 .services .service p {
-  color:rgb(99, 91, 91);
+  color: rgb(49, 45, 45);
   font-size: 14px;
   line-height: 20px;
   margin-top: 15px;
@@ -161,7 +161,7 @@ main {
 }
 
 .services .searvices-info .info h4 {
-  color:rgb(99, 91, 91);
+  color: rgb(49, 45, 45);
   margin: 15px 0px 15px;
 }
 
@@ -193,6 +193,7 @@ main {
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
+  height: 515px;
 }
 
 .specialists h2{
@@ -221,7 +222,7 @@ main {
 }
 
 .specialists .specialists-info .specialist-info h4 {
-  color:rgb(99, 91, 91);
+  color: rgb(49, 45, 45);
 }
 
 .specialists .specialists-info .specialist-info p:first-of-type{
@@ -271,13 +272,273 @@ main {
 /* Start Awards */
 .awards {
   padding-top: 70px;
+
+}
+
+.awards h2 {
+  margin-bottom: 50px;
+}
+
+.awards .awards-info {
+  display: flex;
+  justify-content: space-between;
 }
 
 
+.awards .awards-info div{
+  margin-top: -60px;
+}
 
+.awards .awards-info div i,
+.awards .tree i {
+  color: var(--red);
+  margin-bottom: 30px;
+}
 
+.awards .awards-info div h4,
+.awards .tree h4 {
+  color: rgb(49, 45, 45);
+  margin-bottom: 10px;
+}
 
-
-
-
+.awards .awards-info div p,
+.awards .tree p{
+  color: var(--openblack);
+  font-size: 10px;
+  line-height: 18px;
+}
 /* End Awards  */
+
+/* Start Thank You */
+.thank {
+  padding-top: 70px;
+}
+
+.thank h2 {
+  padding-bottom: 60px;
+}
+
+.thank .thank-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.thank .thank-info .info1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33%;
+}
+
+.thank .thank-info .info1 .third {
+  box-shadow: 1px 1px 10px -5px;
+  padding: 10px
+}
+
+.thank .thank-info .info1 .the-info1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.thank .thank-info .the-info1 img {
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--openred);
+  border-radius: 50%;
+}
+
+.thank .thank-info .the-info1 h4 {
+  color: rgb(49, 45, 45);
+  font-size: 15px;
+}
+
+.thank .thank-info .the-info1 div:nth-of-type(2) i {
+  color: var(--red);
+  padding: 5px 0px 5px;
+  margin-right: 2px;
+  font-size: small;
+}
+
+.thank .thank-info .the-info1 div:nth-of-type(2) span {
+  color: var(--openblack);
+  padding-left: 5px;
+  font-size: 11px;
+}
+
+.thank .thank-info .the-info1 div:nth-of-type(3) {
+  color: var(--openblack);
+  font-size: 12px;
+}
+
+.thank .thank-info .info2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+}
+
+.thank .thank-info .the-info2  {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.thank .thank-info .the-info2 div:first-child  {
+  margin-right: 15px;
+}
+
+.thank .thank-info .the-info2 img {
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--openred);
+  border-radius: 50%;
+}
+
+.thank .thank-info .the-info2 h4 {
+  color: rgb(49, 45, 45);
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+.thank .thank-info .the-info2 span {
+  color: var(--openblack);
+  font-size: 12px;
+}
+
+.thank .thank-info .the-info3 i {
+  color: var(--red);
+  padding-bottom: 20px;
+  margin-right: 2px;
+  font-size: small;
+}
+
+.thank .thank-info .the-info3 p {
+  color: rgb(49, 45, 45);
+  line-height: 18px;
+  font-size: 13px;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.thank .thank-info .the-info3 p span {
+  color: var(--red);
+}
+
+.thank .thank-info .the-info3 hr {
+  width: 60%;
+  height: 3px;
+  border: 1px solid #fff;
+  background-color: var(--openred);
+}
+
+.thank .thank-info .the-info4 {
+  padding-top: 20px;
+}
+
+.thank .thank-info .the-info4 .spans hr {
+  width: 40%;
+  height: 4px;
+  border: 1px solid #fff;
+  background-color: var(--red);
+}
+
+.thank .thank-info .the-info4 div:nth-of-type(2) {
+  padding: 5px 0px 5px;
+}
+
+.thank .thank-info .the-info4 .spans {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.thank .thank-info .the-info4 .spans div:first-child {
+  color: rgb(49, 45, 45);
+  font-size: 14px;
+}
+
+.thank .thank-info .the-info4 .spans div:last-child {
+  color: var(--openblack);
+  font-size: 14px;
+}
+/* End Thank You */
+
+/* Start Need */
+.need {
+  padding: 70px 0px 30px;
+}
+
+.need h2 {
+  padding-bottom: 40px;
+}
+
+.need .need-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.need .need-info h3{
+  padding-bottom: 20px;
+}
+
+.need .need-info div h5{
+  color: rgb(49, 45, 45);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.need .need-info div span{
+  color: var(--openblack);
+  font-size: 12px;
+  /* border-bottom: 2px solid var(--red);
+  padding-bottom: 3px; */
+}
+
+.need .need-info div hr {
+  width: 100%;
+  height: 4px;
+  border: 1px solid #fff;
+  background-color: var(--red);
+  margin-top: 5px;
+}
+
+.need .need-info div button{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  color: #FFF;
+  background-color: var(--red);
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.need .need-info div p{
+  color: var(--openblack);
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.need .need-info div div:nth-of-type(2) {
+  padding-top: 40px;
+}
+
+.need .need-info div div:nth-of-type(3) {
+  padding-top: 80px;
+}
+
+.need .need-info .map img{
+  width: 500px;
+  height: 400px;
+}
+
+.need hr {
+  width: 100%;
+  height: 4px;
+  border: 1px solid #fff;
+  background-color: var(--red);
+  margin-top: 70px;
+}
+
+/* End Need */

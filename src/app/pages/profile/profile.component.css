@@ -1,0 +1,80 @@
+:focus {
+  outline: none;
+}
+
+.my-profile {
+  padding: 100px 0px 100px;
+  background-color: #fde1e5;
+}
+
+.my-profile .container {
+  padding: 50px 0px 50px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.my-profile .container h2 {
+  margin-bottom: 20px;
+  color: #f44d61;
+}
+
+.my-profile .container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-profile .container form span {
+  color: #d48b96;
+  font-size: 14px;
+}
+
+.my-profile form input {
+  background-color: #fde1e5;
+  width: 40%;
+  padding: 15px 0px 15px 15px;
+  border: none;
+  border-radius: 20px;
+}
+
+.my-profile form input::placeholder {
+  color: #9ca6b7;
+  font-size: 12px;
+}
+
+.my-profile form button {
+  background-color: #f44d61;
+  color: #fff;
+  width: 40%;
+  padding: 15px 0px 15px 15px;
+  border: none;
+  border-radius: 30px;
+}
+
+form .my-loader {
+  font-size: large;
+  color: var(--red);
+  position: absolute;
+  top: 240%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
+.loader-dot {
+  animation: 1s blink infinite;
+  font-size: xx-large;
+}
+.loader-dot:nth-child(2) {
+  animation-delay: 250ms;
+  font-size: xx-large;
+}
+.loader-dot:nth-child(3) {
+  animation-delay: 500ms;
+  font-size: xx-large;
+}
