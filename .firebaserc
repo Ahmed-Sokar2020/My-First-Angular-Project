@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "first-project-angular-6bf72"
+  },
+  "targets": {
+    "first-project-angular-6bf72": {
+      "hosting": {
+        "my-first-project": [
+          "first-project-angular-6bf72"
+        ]
+      }
+    }
+  }
+}

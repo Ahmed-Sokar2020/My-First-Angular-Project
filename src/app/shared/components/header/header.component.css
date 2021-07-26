@@ -1,0 +1,107 @@
+
+header {
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+align-items: center;
+}
+
+header .spans span:first-child {
+  margin-right: 35px;;
+}
+
+header .spans i,
+header .icons i {
+  color: var(--red);
+  border: none;
+  width: 20px;
+  height: 50px;
+  line-height: 50px;
+}
+
+header .icons a:hover i{
+  opacity: .6;
+}
+
+header .icons i:first-child,
+header .icons i:nth-child(2) {
+  margin-right: 10px;;
+}
+
+header .spans .first {
+  color: var(--openblack);
+  font-size: small;
+}
+
+hr{
+  border: 1px solid var(--openred);
+}
+
+nav {
+  padding: 35px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+}
+
+nav h1 {
+  color: var(--red);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+nav h1 i {
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 14px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:rgb(99, 91, 91);
+}
+
+nav ul li a:hover {
+  color: var(--red)
+}
+
+nav div span button {
+  padding: 10px 15px;
+  margin: 10px;
+  border: 1px solid var(--openred);
+  background-color: var(--openred);
+  color: var(--black);
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+nav div span a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+nav div span a:first-child {
+  margin-right: 5px;
+  color:rgb(99, 91, 91);
+}
+
+nav div span.active a,
+nav div span.active i {
+  color: var(--red)
+}
+
+nav div span i {
+  font-size: 16px;
+}

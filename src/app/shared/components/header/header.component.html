@@ -1,0 +1,79 @@
+<!-- Start The Main -->
+<div class="the-main">
+  <div class="container">
+    <header>
+      <div class="spans">
+        <!-- <button type="button" (click)="changeCurrentLanguage('en')">EN</button>
+        <button type="button" (click)="changeCurrentLanguage('ar')">AR</button> -->
+        <span>
+          <i class="fas fa-phone-alt"></i>
+          <span class="first">(702)555-0122</span>
+        </span>
+        <span
+          ><i class="fas fa-envelope"></i>
+          <span class="first">contactcentre@healthall.com</span>
+        </span>
+      </div>
+
+      <div class="icons">
+        <a href="https://www.facebook.com" alt="link">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.linkedin.com" alt="link"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://www.twitter.com" alt="link"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+    </header>
+    <hr />
+    <nav>
+      <h1><i class="fas fa-tty"></i>Healthall</h1>
+      <ul>
+        <li>
+          <a href="#">{{ "ABOUT_US" | translate }}</a>
+        </li>
+        <li>
+          <a href="#">{{ "SERVICES" | translate }}</a>
+        </li>
+        <li>
+          <a href="#">{{ "MEMPERSHIP" | translate }}</a>
+        </li>
+        <li>
+          <a
+            [routerLink]="'/contact'"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            {{ "CONTACT_US" | translate }}
+          </a>
+        </li>
+      </ul>
+      <div>
+        <span
+          ><button type="button" (click)="changeCurrentLanguage('ar')">
+            Ar
+          </button>
+        </span>
+        <span
+          ><button type="button" (click)="changeCurrentLanguage('en')">
+            En
+          </button>
+        </span>
+        <span class="active"
+          ><a
+            [routerLink]="'/profile'"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            {{ "PROFILE" | translate }}
+          </a>
+          <i class="fas fa-user"></i
+        ></span>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- End The Main -->

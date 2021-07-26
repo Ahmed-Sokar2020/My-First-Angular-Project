@@ -1,0 +1,70 @@
+<div class="my-profile">
+  <div class="container">
+    <h2 class="text-center">{{ "EDIT_PROFILE_FORM" | translate }}</h2>
+    <!-- {{ "EDIT PROFILE FORM" | translate }} -->
+    <form [formGroup]="profileForm">
+      <input type="text" placeholder="First Name" formControlName="firstName" />
+      <ng-container
+        *ngIf="firstName?.invalid && firstName?.touched && firstName?.dirty"
+      >
+        <span *ngIf="firstName?.errors?.required">
+          This Field Is Required!
+        </span>
+        <span *ngIf="firstName?.errors?.invalidName">
+          Your Name Is Invalid!
+        </span>
+      </ng-container>
+      <br />
+
+      <input type="text" placeholder="Last Name" formControlName="lastName" />
+      <ng-container
+        *ngIf="lastName?.invalid && lastName?.touched && lastName?.dirty"
+      >
+        <span *ngIf="lastName?.errors?.required">
+          This Field Is Required!
+        </span>
+        <span *ngIf="lastName?.errors?.invalidName">
+          Your Name Is Invalid!
+        </span>
+      </ng-container>
+      <br />
+
+      <input type="text" placeholder="User Name" formControlName="userName" />
+      <ng-container
+        *ngIf="userName?.invalid && userName?.touched && userName?.dirty"
+      >
+        <span *ngIf="userName?.errors?.required"> This Field Is Required!</span>
+        <span *ngIf="userName?.errors?.invalidName"
+          >This User Name Is Invalid!</span
+        >
+      </ng-container>
+      <br />
+
+      <input type="text" placeholder="Email" formControlName="email" />
+      <ng-container *ngIf="email?.invalid && email?.touched && email?.dirty">
+        <span *ngIf="email?.errors?.required"> This Field Is Required!</span>
+        <span *ngIf="email?.errors?.pattern"> Wrong Pattern!</span>
+        <span *ngIf="email?.errors?.email">Wrong Email!</span>
+      </ng-container>
+      <br />
+
+      <input type="text" placeholder="Phone" formControlName="phone" />
+      <br />
+      <button
+        type="button"
+        (click)="editMode = !editMode; editMode ? edit() : save()"
+      >
+        {{ editMode ? "Save" : "Edit" }}
+      </button>
+
+      <div class="my-loader text-center" *ngIf="loderService.isLoading | async">
+        <strong
+          >Loading
+          <span class="loader-dot">.</span>
+          <span class="loader-dot">.</span>
+          <span class="loader-dot">.</span></strong
+        >
+      </div>
+    </form>
+  </div>
+</div>

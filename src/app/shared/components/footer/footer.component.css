@@ -1,0 +1,107 @@
+footer {
+  padding-top: 40px;
+}
+
+footer .footer-info {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .info1 h2 {
+  color: var(--red);
+  padding-bottom:20px;
+}
+
+footer .info1 h2 i {
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+footer .info1 div p {
+  color:rgb(99, 91, 91);
+  font-size: 12px;
+}
+
+footer .info1 div p:nth-child(2) {
+  padding: 15px 0px;
+}
+
+footer .info1 div p:nth-child(3) {
+  padding-bottom: 15px;
+}
+
+footer .icons i {
+  color: var(--red);
+  border: none;
+  width: 20px;
+  height: 50px;
+  line-height: 30px;
+}
+
+footer .icons i:first-child,
+footer .icons i:nth-child(2) {
+  margin-right: 20px;;
+}
+
+footer .info2 h4,
+footer .info3 h4,
+footer .info4 h4 {
+  padding-bottom: 30px;
+}
+
+footer .info2 ul,
+footer .info3 ul ,
+footer .info4 ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+footer .info2 ul li,
+footer .info3 ul li,
+footer .info4 ul li {
+  color:rgb(99, 91, 91);
+  font-size: 13px;
+}
+
+footer .info2 ul li:nth-child(2) {
+  padding: 18px 0px;
+}
+
+footer .info2 ul li:nth-child(3) {
+  padding-bottom: 18px;
+}
+
+footer .info3 ul li:nth-child(2) {
+  padding: 18px 0px;
+}
+
+footer .info4 ul li:nth-child(2) {
+  padding: 20px 0px 10px 0px;
+}
+
+footer .info4 h4 {
+  color: var(--red);
+}
+
+footer .info4 ul li:last-child {
+  color: var(--openblack);
+  border-bottom: 2px solid var(--red);
+  padding-bottom: 3px;
+}
+
+footer .info4 ul li:last-child i{
+  color: var(--red);
+  margin-left: 50px;
+
+}
+
+footer .copyrights {
+  padding-top: 20px;
+}
+
+footer .copyrights span {
+  color: var(--openblack);
+  font-size: 12px;
+}
