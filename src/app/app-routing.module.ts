@@ -1,5 +1,6 @@
+import { TeamComponent } from './pages/team/team.component';
+import { PageNotfoundComponent } from './pages/page-notfound/page-notfound.component';
 import { ResolverGuard } from '@app/core/guards/resolver.guard';
-import { ProfileDetailsComponent } from '@app/pages/profile-details/profile-details.component';
 import { ProfileComponent } from '@app/pages/profile/profile.component';
 import { ContactUsComponent } from '@app/pages/contact-us/contact-us.component';
 import { ServicesComponent } from '@app/pages/services/services.component';
@@ -8,13 +9,18 @@ import { LoginComponent } from '@app/pages/login/login.component';
 import { HomeComponent } from '@app/pages/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MembershipComponent } from '@app/pages/membership/membership.component';
+
 
 
 const routes: Routes = [
   {
-    path: '' ,
+    path: 'home' ,
     component: HomeComponent,
+  },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch:'full'
   },
   {
     path: 'login',
@@ -29,8 +35,8 @@ const routes: Routes = [
     component: ServicesComponent
   },
   {
-    path: 'membership',
-    component: MembershipComponent
+    path: 'team',
+    component: TeamComponent
   },
   {
     path: 'contact',
@@ -39,14 +45,11 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent,
-    children: [
-    {
-      path: 'profile/:id',
-      component: ProfileDetailsComponent,
-      resolve: {myProfile: ResolverGuard}
-    }
-  ]
-  }
+  },
+  {
+    path: '**',
+    component: PageNotfoundComponent
+  },
 
 ];
 

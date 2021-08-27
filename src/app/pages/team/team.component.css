@@ -1,0 +1,83 @@
+/* Start Specialists */
+.specialists {
+  padding-top: 70px;
+  background-color:#FFF5F6;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  height: 515px;
+}
+
+.specialists h2{
+  padding-bottom: 60px;
+}
+
+.specialists .specialists-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specialists .specialists-info .specialist-info {
+  width: 23%;
+  height: 250px;
+  background-color: #FDFDFD;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.specialists .specialists-info .specialist-info img{
+  width: 80px;
+  height: 80px;
+  border: 3px solid var(--openred);
+  border-radius: 50%;
+}
+
+.specialists .specialists-info .specialist-info h4 {
+  color: rgb(49, 45, 45);
+}
+
+.specialists .specialists-info .specialist-info p:first-of-type{
+  color: var(--openblack);
+  font-size: 13px;
+  line-height: 27px;
+}
+
+.specialists .specialists-info .specialist-info p:nth-of-type(2){
+  color: var(--red);
+  font-size: 13px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
+.specialists .specialists-info .specialist-info .profile {
+  width: 100px;
+  padding: 5px 10px;
+  background-color: var(--openred);
+  border-radius: 10px;
+  margin: auto;
+}
+
+.specialists .specialists-info .specialist-info span,
+.specialists .specialists-info .specialist-info .profile i,
+.specialists .specialists-info .specialist-info .profile span{
+  color: var(--red);
+  font-size: 13px;
+}
+
+.specialists .specialists-info .specialist-info .profile span{
+  padding-left: 10px;
+}
+
+.specialists .all span,
+.specialists .all i {
+  padding-top: 50px;
+  color: var(--red);
+  font-size: 14px;
+}
+
+.specialists .all span {
+  padding-right: 10px
+}
+/* End Specialists */

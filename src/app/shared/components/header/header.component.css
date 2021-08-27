@@ -45,12 +45,13 @@ nav {
   align-items: center;
 }
 
-nav h2 {
+nav h1 {
   color: var(--red);
-
+  font-weight: bold;
+  font-size: 30px;
 }
 
-nav h2 i {
+nav h1 i {
   margin-right: 15px;
   font-size: 25px;
 }
@@ -59,29 +60,37 @@ nav ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
-  font-size: 14px;
 }
 
 nav ul li {
   display: inline-block;
   margin-right: 20px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 nav ul li a {
   text-decoration: none;
-  color:rgb(99, 91, 91);
+  color: rgb(151, 58, 129)
+
 }
 
 nav ul li a:hover {
   color: var(--red)
 }
 
-nav div span:first-child {
-  margin-right: 20px;
+nav div span button {
+  padding: 10px 15px;
+  margin: 10px;
+  border: 1px solid var(--openred);
+  background-color: var(--openred);
+  color: var(--black);
+  font-weight: bold;
+  border-radius: 10px;
 }
 
 nav div span a {
-  font-size: 14px;
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -96,5 +105,5 @@ nav div span.active i {
 }
 
 nav div span i {
-  font-size: 12px;
+  font-size: 16px;
 }

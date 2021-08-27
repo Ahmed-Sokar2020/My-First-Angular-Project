@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Title, Meta } from '@angular/platform-browser';
-// import { TranslateService } from '@ngx-translate/core/';
+import { fromEvent } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -18,8 +18,10 @@ export class AppComponent implements OnInit {
   ) {
     this.isLogin = true;
   }
+
   // To update meta tags
   ngOnInit(): any {
+    // fromEvent(document, 'click').subscribe(console.log);
     this.titleService.setTitle(this.title);
     this.metaService.addTags([
       { name: 'keywords', content: 'Angular, 11, Universal' },

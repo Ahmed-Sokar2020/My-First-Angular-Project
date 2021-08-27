@@ -1,7 +1,6 @@
 <div class="my-profile">
   <div class="container">
     <h2 class="text-center">{{ "EDIT_PROFILE_FORM" | translate }}</h2>
-    <!-- {{ "EDIT PROFILE FORM" | translate }} -->
     <form [formGroup]="profileForm">
       <input type="text" placeholder="First Name" formControlName="firstName" />
       <ng-container
@@ -54,7 +53,7 @@
         type="button"
         (click)="editMode = !editMode; editMode ? edit() : save()"
       >
-        {{ editMode ? "Save" : "Edit" }}
+      {{ editMode ? "SAVE" : "EDIT" | translate}}
       </button>
 
       <div class="my-loader text-center" *ngIf="loderService.isLoading | async">

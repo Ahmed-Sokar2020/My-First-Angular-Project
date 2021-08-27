@@ -1,0 +1,77 @@
+/* Start Services */
+.services {
+  padding: 60px 0px 60px;
+  background-color: #fde1e5;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px 0 30px;
+  border-radius: 30px;
+}
+
+.service h2 {
+  font-weight: bold;
+}
+
+.services .service p {
+  color: rgb(49, 45, 45);
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.services .service p span{
+  color: var(--red);
+  font-size: 14px;
+
+}
+
+.services .searvices-info {
+  display: flex;
+  flex-flow: row wrap ;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services .searvices-info .info{
+  width: 31%;
+  margin-right: 2%;
+  margin-bottom: 30px;;
+}
+
+.services .searvices-info .info i{
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: var(--red);
+  color: #FFF;
+  border-radius: 8px;
+}
+
+.services .searvices-info .info h4 {
+  color: rgb(49, 45, 45);
+  margin: 15px 0px 15px;
+}
+
+.services .searvices-info .info p {
+  color: var(--openblack);
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.services .all {
+  padding-top: 20px;
+}
+
+.services .all span {
+  color: var(--red);
+  font-size: 16px;
+}
+
+.services .all span i{
+  margin-left: 10px;
+}
+/* End Services */
