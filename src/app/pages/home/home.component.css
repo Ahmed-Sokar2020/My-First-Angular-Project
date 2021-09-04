@@ -6,7 +6,7 @@ h2 {
   font-size: 30px;
 }
 
-@media screen {
+@media (max-width: 767px) {
   h2 {
     font-size: 25px;
   }
@@ -340,8 +340,7 @@ main {
 }
 
 .need .need-info .map img{
-  width: 500px;
-  height: 400px;
+  object-fit: contain
 }
 
 .need hr {
