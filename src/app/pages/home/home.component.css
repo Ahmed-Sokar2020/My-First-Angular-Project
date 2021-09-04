@@ -1,15 +1,24 @@
-/* Start The Main */
+/* Small /Medium / Larg Screens*/
 
+/* Start The Main */
 h2 {
   font-weight: bold;
   font-size: 30px;
 }
+
+@media screen {
+  h2 {
+    font-size: 25px;
+  }
+}
+
 main {
   height: 500px;
   background-color: #FDF3F4;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
   z-index: 1;
+  margin: 0px 10px;
 }
 .content {
   display: flex;
@@ -21,15 +30,16 @@ main {
   padding-top: 60px;
 }
 
-.content h4 {
+.content .heading h4 {
   color: var(--red);
 }
 
-.content h1 {
+.content .heading h1 {
   padding: 10px 0 20px;
 }
 
-.content p {
+.content .heading p,
+.last .last-info p {
   font-size: 13px;
   line-height: 20px;
   color: var(--openblack);
@@ -76,7 +86,6 @@ main {
 /* Start Awards */
 .awards {
   padding-top: 70px;
-
 }
 
 .awards h2 {
@@ -87,7 +96,6 @@ main {
   display: flex;
   justify-content: space-between;
 }
-
 
 .awards .awards-info div{
   margin-top: -60px;
@@ -108,7 +116,7 @@ main {
 .awards .awards-info div p,
 .awards .tree p{
   color: var(--openblack);
-  font-size: 10px;
+  font-size: 12px;
   line-height: 18px;
 }
 /* End Awards  */
@@ -285,6 +293,7 @@ main {
 
 .need .need-info h3{
   padding-bottom: 20px;
+  color: var(--red);
 }
 
 .need .need-info div h5{
@@ -296,8 +305,6 @@ main {
 .need .need-info div span{
   color: var(--openblack);
   font-size: 12px;
-  /* border-bottom: 2px solid var(--red);
-  padding-bottom: 3px; */
 }
 
 .need .need-info div hr {
@@ -344,5 +351,144 @@ main {
   background-color: var(--red);
   margin-top: 70px;
 }
-
 /* End Need */
+
+/* Media Query For Mobile/Tablets */
+@media (max-width: 767px) {
+  /* Start The Main */
+  main {
+    height: 700px;
+  }
+  .content .heading  {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .content .heading h1 {
+    padding: 10px 0px;
+  }
+  .content .heading p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .content div img {
+    border-bottom-right-radius: 0%;
+  }
+  .last {
+    width: 96%;
+    height: 60px;
+    justify-content:space-around;
+    margin-left: 2%;
+    margin-top: -40px;
+  }
+  .last .last-info h5{
+    font-size: 10px;
+  }
+  .last .last-info p {
+    font-size: 8px;
+    line-height: 9px;
+  }
+  .last .last-info i {
+    margin-right: 2px;
+  }
+  .last i.fa-search {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 5px;
+  }
+  /* End The Main */
+
+  /* Start Awards */
+  .awards h2 {
+    margin-bottom: 35px;
+  }
+
+  .awards .awards-info div{
+    margin-top: 30px;
+  }
+
+  .awards .awards-info div i,
+  .awards .tree i {
+    margin-bottom: 15px;
+    font-size: 30px;
+  }
+
+  .awards .awards-info div h4,
+  .awards .tree h4 {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .awards .awards-info div p,
+  .awards .tree p{
+    font-size: 11px;
+    line-height: 15px;
+  }
+  /* End Awards  */
+
+  /* Start Thank You */
+  .thank h2 {
+    padding-bottom: 40px;
+  }
+  .thank .thank-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .thank .thank-info .info1 {
+    width: 100%;
+  }
+  /* End Thank You */
+
+  /* Start Need */
+  .need h2 {
+    padding-bottom: 40px;
+  }
+  .need .need-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .need-info div:nth-of-type(1) {
+    width: 25%
+  }
+  .need-info div:nth-of-type(2) {
+    width: 74%
+  }
+  .need .need-info div h5{
+    width: 70px;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  .need .need-info div span{
+    font-size: 11px;
+    width: 75px;
+    display: inline-block;
+  }
+  .need .need-info div hr {
+    width: 75px
+  }
+  .need .need-info div button{
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    color: #FFF;
+    background-color: var(--red);
+    padding: 9px 5px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .need .need-info div p{
+    font-size: 11px;
+  }
+  .need .need-info div div:nth-of-type(2) {
+    padding-top: 25px;
+  }
+
+  .need .need-info div div:nth-of-type(3) {
+    padding-top: 40px;
+  }
+  /* End Need */
+
+}

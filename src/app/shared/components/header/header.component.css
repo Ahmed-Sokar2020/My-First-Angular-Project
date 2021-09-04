@@ -1,13 +1,15 @@
+/* Small /Medium / Larg Screens*/
 
+/* Start Header */
 header {
-display: flex;
-flex-direction: row;
-justify-content:space-between;
-align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .spans span:first-child {
-  margin-right: 35px;;
+  margin-right: 35px;
 }
 
 header .spans i,
@@ -19,13 +21,13 @@ header .icons i {
   line-height: 50px;
 }
 
-header .icons a:hover i{
-  opacity: .6;
+header .icons a:hover i {
+  opacity: 0.6;
 }
 
 header .icons i:first-child,
 header .icons i:nth-child(2) {
-  margin-right: 10px;;
+  margin-right: 10px;
 }
 
 header .spans .first {
@@ -33,15 +35,17 @@ header .spans .first {
   font-size: small;
 }
 
-hr{
+hr {
   border: 1px solid var(--openred);
 }
+/* End Header */
 
+/* Start Nav */
 nav {
   padding: 35px 0px;
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -71,22 +75,27 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(151, 58, 129)
-
+  color: rgb(151, 58, 129);
 }
 
 nav ul li a:hover {
-  color: var(--red)
+  color: var(--red);
 }
 
-nav div span button {
-  padding: 10px 15px;
-  margin: 10px;
+nav div .change a {
+  padding: 6px 10px;
+  margin: 5px;
   border: 1px solid var(--openred);
   background-color: var(--openred);
   color: var(--black);
   font-weight: bold;
+  font-size: 15px;
   border-radius: 10px;
+}
+
+nav div .change a:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 nav div span a {
@@ -95,15 +104,59 @@ nav div span a {
 }
 
 nav div span a:first-child {
-  margin-right: 5px;
-  color:rgb(99, 91, 91);
+  margin-right: 2px;
+  color: rgb(99, 91, 91);
 }
 
 nav div span.active a,
 nav div span.active i {
-  color: var(--red)
+  color: var(--red);
+}
+
+nav div .active a {
+  margin-left: 15px;
 }
 
 nav div span i {
   font-size: 16px;
+}
+/* End Nav */
+
+
+/* Media Query For Mobile/Tablets */
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+  }
+
+  header .spans {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .spans i,
+  header .icons i {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav h1 {
+    font-size: 25px;
+  }
+
+  nav ul {
+    padding: 25px 0px;
+  }
+
+  nav ul li {
+    margin-right: 12px;
+    font-size: 15px;
+  }
+
 }

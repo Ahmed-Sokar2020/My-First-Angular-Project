@@ -1,3 +1,6 @@
+/* Small /Medium / Larg Screens*/
+
+/* Start Contact Us */
 :focus {
   outline: none;
 }
@@ -63,19 +66,19 @@ color: #7D58FC;
   display: inline-block;
 }
 
-.contact-info .myform .icons a:hover i{
+.contact-info .myform .icons a:hover i {
   color: #FFFFFF;
 }
 
-.contact-info .myform .icons a:first-of-type:hover{
+.contact-info .myform .icons a:first-of-type:hover {
   background-color: #385998;
 }
 
-.contact-info .myform .icons a:nth-of-type(2):hover{
+.contact-info .myform .icons a:nth-of-type(2):hover {
   background-color: #62C8F8;
 }
 
-.contact-info .myform .icons a:last-of-type:hover{
+.contact-info .myform .icons a:last-of-type:hover {
   background-color: #0075B6;
 }
 
@@ -84,20 +87,40 @@ color: #7D58FC;
 }
 
 .myform .icons a i{
-  font-size: 18ypx;
+  font-size: 18px;
   font-weight: bold;
 }
 
-.myform .icons a .fa-facebook-f{
+.myform .icons a .fa-facebook-f {
   color: #385998;
 }
 
-.myform .icons a .fa-twitter{
+.myform .icons a .fa-twitter {
   color: #62C8F8;
 }
 
-.myform .icons a .fa-linkedin-in{
+.myform .icons a .fa-linkedin-in {
   color: #0075B6;
 }
+/* End Contact Us */
 
+/* Media Query For Mobile/Tablets */
+@media (max-width: 767px) {
+  .contact-us {
+    padding: 50px 0px 50px;
+  }
+  .contact-us .contact-info {
+    flex-direction: column;
+  }
+  .contact-info .form-image {
+    margin-bottom: 30px;
+  }
+  .contact-info .myform form input,
+  .contact-info .myform form textarea {
+    padding: 10px 0px 10px 10px;
+    }
+  .contact-info .myform form button {
+    padding: 10px 0px 10px 10px;
+  }
 
+}

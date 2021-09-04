@@ -1,3 +1,5 @@
+/* Small /Medium / Larg Screens*/
+
 /* Start About Us */
 .about-us {
   padding: 60px 0px 60px;
@@ -6,6 +8,7 @@
 
 .about-us .container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
@@ -23,13 +26,14 @@
 }
 
 .about-us .images div img {
-  border-radius: 10px;
+  border-radius: 15px;
   margin-bottom: 10px;
   margin-right: 10px;
 }
 
 .container .about-info h2 {
   font-weight: bold;
+  font-size: 25px;
 }
 
 .container .about-info p {
@@ -38,15 +42,49 @@
   color: rgb(49, 45, 45);
 }
 
-.container .about-info p:first-of-type {
+.about-us .about-info p:first-of-type {
   margin: 20px 0px 10px;
 }
 
-.container .about-info p:first-of-type span {
+.about-us .about-info p:first-of-type span {
   color: var(--red);
 }
 
-.container .about-info p:nth-of-type(2) span  {
+.about-us .about-info p:nth-of-type(2) span  {
   color: var(--red);
 }
 /* End About Us */
+
+/* Media Query For Mobile/Tablets */
+@media (max-width: 767px) {
+  .about-us .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px 20px 30px;
+    border-radius: 30px;
+  }
+
+  .about-us .images {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  .about-us .images div img {
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
+
+  .about-info {
+    width: 105%;
+    text-align: center;
+}
+  .about-us .about-info p:first-of-type {
+    margin: 10px 0px 10px;
+}
+
+}

@@ -1,3 +1,5 @@
+/* Small /Medium / Larg Screens*/
+
 /* Start Services */
 .services {
   padding: 60px 0px 60px;
@@ -6,16 +8,17 @@
 
 .container {
   background-color: #fff;
-  padding: 30px 0 30px;
+  padding: 30px 0px ;
   border-radius: 30px;
 }
 
 .service h2 {
   font-weight: bold;
+  font-size: 20px;
 }
 
 .services .service p {
-  color: rgb(49, 45, 45);
+  color: var(--openblack);
   font-size: 14px;
   line-height: 20px;
   margin-top: 15px;
@@ -25,7 +28,6 @@
 .services .service p span{
   color: var(--red);
   font-size: 14px;
-
 }
 
 .services .searvices-info {
@@ -53,7 +55,7 @@
 
 .services .searvices-info .info h4 {
   color: rgb(49, 45, 45);
-  margin: 15px 0px 15px;
+  margin: 10px 0px 6px;
 }
 
 .services .searvices-info .info p {
@@ -75,3 +77,58 @@
   margin-left: 10px;
 }
 /* End Services */
+
+/* Media Query For Mobile/Tablets */
+@media (max-width: 767px) {
+  .service h2 {
+    font-size: 16px;
+  }
+
+  .services .service p {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+
+  .services .service p span{
+    font-size: 12px;
+  }
+
+  .services .searvices-info .info{
+    width: 100%;
+    margin-bottom: 20px;;
+  }
+
+  .services .searvices-info .info i{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 5px;
+  }
+
+  .services .searvices-info .info h4 {
+    font-size: 14px;
+    margin: 8px 0px 2px;
+  }
+
+  .services .searvices-info .info p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .services .all {
+    padding-top: 10px;
+  }
+
+  .services .all span {
+    font-size: 14px;
+  }
+
+  .services .all span i{
+    margin-left: 5px;
+  }
+
+}
+
+

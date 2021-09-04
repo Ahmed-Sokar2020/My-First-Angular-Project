@@ -3,14 +3,14 @@ footer {
 }
 
 footer .footer-info {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 footer .info1 h2 {
   color: var(--red);
-  padding-bottom:20px;
+  padding-bottom: 20px;
 }
 
 footer .info1 h2 i {
@@ -19,7 +19,7 @@ footer .info1 h2 i {
 }
 
 footer .info1 div p {
-  color:rgb(99, 91, 91);
+  color: rgb(99, 91, 91);
   font-size: 12px;
 }
 
@@ -41,7 +41,7 @@ footer .icons i {
 
 footer .icons i:first-child,
 footer .icons i:nth-child(2) {
-  margin-right: 20px;;
+  margin-right: 20px;
 }
 
 footer .info2 h4,
@@ -51,7 +51,7 @@ footer .info4 h4 {
 }
 
 footer .info2 ul,
-footer .info3 ul ,
+footer .info3 ul,
 footer .info4 ul {
   margin: 0px;
   padding: 0px;
@@ -61,20 +61,17 @@ footer .info4 ul {
 footer .info2 ul li,
 footer .info3 ul li,
 footer .info4 ul li {
-  color:rgb(99, 91, 91);
+  color: rgb(99, 91, 91);
   font-size: 13px;
 }
 
-footer .info2 ul li:nth-child(2) {
+footer .info2 ul li:nth-child(2),
+footer .info3 ul li:nth-child(2) {
   padding: 18px 0px;
 }
 
 footer .info2 ul li:nth-child(3) {
   padding-bottom: 18px;
-}
-
-footer .info3 ul li:nth-child(2) {
-  padding: 18px 0px;
 }
 
 footer .info4 ul li:nth-child(2) {
@@ -91,10 +88,9 @@ footer .info4 ul li:last-child {
   padding-bottom: 3px;
 }
 
-footer .info4 ul li:last-child i{
+footer .info4 ul li:last-child i {
   color: var(--red);
   margin-left: 50px;
-
 }
 
 footer .copyrights {
@@ -104,4 +100,36 @@ footer .copyrights {
 footer .copyrights span {
   color: var(--openblack);
   font-size: 12px;
+}
+
+/* Media Query For Mobile/Tablet */
+@media (max-width: 767px) {
+  footer .footer-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;;
+  }
+  footer .info1,
+  footer .info2,
+  footer .info3,
+  footer .info4 {
+    width: 50%
+  }
+
+  footer .icons i {
+    height: 30px;
+  }
+  footer .info2 h4,
+  footer .info3 h4,
+  footer .info4 h4 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  footer .info2 ul li:nth-child(2),
+  footer .info3 ul li:nth-child(2) {
+    padding: 10px 0px;
+  }
+  footer .info2 ul li:nth-child(3) {
+    padding-bottom: 10px;
+  }
 }

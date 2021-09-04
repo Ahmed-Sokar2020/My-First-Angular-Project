@@ -32,12 +32,12 @@ export class ProfileComponent {
     this.profileForm = this.fb.group({
       firstName: ['Ahmed', [Validators.required, Validators.minLength(3)]],
       lastName: ['Sokar', [Validators.required, Validators.minLength(3)]],
-      userName: ['a7medsokar', [Validators.required]],
+      userName: ['Ahmed_Sokar', [Validators.required]],
       email: [
-        'a7medsokar@gmail.com',
+        'sokar72@gmail.com',
         [Validators.required, Validators.email, Validators.pattern('.*com$')],
       ],
-      phone: ['+201203792239'],
+      phone: ['+201280157117'],
     });
 
     this.profileForm.disable();

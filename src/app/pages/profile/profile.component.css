@@ -1,3 +1,6 @@
+/* Small /Medium / Larg Screens*/
+
+/* Start Profile */
 :focus {
   outline: none;
 }
@@ -77,4 +80,22 @@ form .my-loader {
 .loader-dot:nth-child(3) {
   animation-delay: 500ms;
   font-size: xx-large;
+}
+/* End Profile */
+
+
+/* Media Query For Mobile/Tablets */
+@media (max-width: 767px) {
+  .my-profile {
+    padding: 50px 0px 50px;
+  }
+  .my-profile .container h2 {
+    font-size: 17px;
+  }
+  .my-profile form input,
+  .my-profile form button {
+    width: 75%;
+    padding: 10px 0px 10px 10px;
+
+  }
 }
